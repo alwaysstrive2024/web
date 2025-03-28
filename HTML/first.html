@@ -1,1 +1,162 @@
 <!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="一个包含所有常见HTML标签的示例文档">
+  <title>所有HTML常见标签示例</title>
+  <!-- 外部样式表 -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- 内联样式 -->
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; }
+    header, nav, main, aside, footer, section, article { margin: 20px; padding: 10px; border: 1px solid #ccc; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { padding: 8px; text-align: left; border: 1px solid #ddd; }
+  </style>
+  <!-- JavaScript 示例 -->
+  <script>
+    function sayHello() {
+      console.log("Hello, world!");
+    }
+  </script>
+</head>
+<body>
+  <!-- 头部区域 -->
+  <header>
+    <h1>所有HTML常见标签示例</h1>
+    <p>这是一个包含各种常见HTML标签的示例页面。</p>
+  </header>
+
+  <!-- 导航栏 -->
+  <nav>
+    <ul>
+      <li><a href="#article">文章</a></li>
+      <li><a href="#form">表单</a></li>
+      <li><a href="#aside">侧边栏</a></li>
+    </ul>
+  </nav>
+
+  <!-- 主体内容 -->
+  <main>
+    <!-- 文章部分 -->
+    <article id="article">
+      <h2>文章标题 (Article)</h2>
+      <p>
+        这是一个示例段落，包含 <strong>加粗</strong>、<em>斜体</em> 和 
+        <abbr title="HyperText Markup Language">HTML</abbr> 的示例。
+      </p>
+      <!-- 图像与说明 -->
+      <figure>
+        <img src="image.jpg" alt="示例图片" width="200">
+        <figcaption>这是一个示例图片</figcaption>
+      </figure>
+      <!-- 引用块 -->
+      <blockquote cite="https://example.com">
+        <p>这是一个引用块，用于展示引用内容。</p>
+      </blockquote>
+      <!-- 行内代码与预格式化代码 -->
+      <p>行内代码示例：<code>console.log("Hello");</code></p>
+      <pre>
+function test() {
+  console.log("Hello, world!");
+}
+      </pre>
+      <hr>
+      <!-- 表格示例 -->
+      <p>表格示例：</p>
+      <table>
+        <thead>
+          <tr>
+            <th>姓名</th>
+            <th>年龄</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>张三</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>李四</td>
+            <td>30</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+
+    <!-- 表单部分 -->
+    <section id="form">
+      <h2>表单示例 (Form Section)</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>用户信息</legend>
+          <label for="name">姓名:</label>
+          <input type="text" id="name" name="name" placeholder="请输入姓名">
+          <br>
+          <label for="email">邮箱:</label>
+          <input type="email" id="email" name="email" placeholder="请输入邮箱">
+          <br>
+          <label for="message">留言:</label>
+          <textarea id="message" name="message" rows="4" cols="50"></textarea>
+          <br>
+          <button type="submit">提交</button>
+        </fieldset>
+      </form>
+      <p>其他表单元素：</p>
+      <select>
+        <option>选项1</option>
+        <option>选项2</option>
+        <option>选项3</option>
+      </select>
+      <br>
+      <input type="checkbox" id="subscribe" name="subscribe">
+      <label for="subscribe">订阅</label>
+      <br>
+      <input type="radio" id="option1" name="option" value="1">
+      <label for="option1">选项1</label>
+      <input type="radio" id="option2" name="option" value="2">
+      <label for="option2">选项2</label>
+    </section>
+
+    <!-- 侧边栏区域 -->
+    <aside id="aside">
+      <h2>侧边栏 (Aside Section)</h2>
+      <p>这里是侧边栏内容，包含嵌入媒体、链接和更多信息。</p>
+      <p>内联链接示例：<a href="https://www.example.com" target="_blank">点击访问示例网站</a></p>
+      <!-- iframe示例 -->
+      <iframe src="https://www.example.com" title="示例Iframe" width="300" height="200"></iframe>
+      <!-- 嵌入对象示例 -->
+      <p>嵌入对象示例：</p>
+      <object data="sample.pdf" type="application/pdf" width="300" height="200">
+        <p>您的浏览器不支持嵌入PDF文件。</p>
+      </object>
+      <!-- 详情与摘要 -->
+      <p>详细信息标签：</p>
+      <details>
+        <summary>点击展开更多信息</summary>
+        <p>这里是详细信息内容。</p>
+      </details>
+    </aside>
+  </main>
+
+  <!-- 页脚 -->
+  <footer>
+    <p>地址：<address>1234 示例路, 示例城市, 国家</address></p>
+    <p>© 2025 示例公司</p>
+    <!-- Canvas示例 -->
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000;">
+      您的浏览器不支持Canvas。
+    </canvas>
+    <script>
+      // 简单的Canvas绘图示例
+      const canvas = document.getElementById('myCanvas');
+      if (canvas.getContext) {
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = 'green';
+        ctx.fillRect(10, 10, 100, 50);
+      }
+    </script>
+  </footer>
+</body>
+</html>
